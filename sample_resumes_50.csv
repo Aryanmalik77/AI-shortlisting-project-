@@ -1,0 +1,51 @@
+Name,Email,Phone,Skills,Experience (Years),Education,Location
+Aarav Sharma,aarav.sharma@example.com,9876543210,Python; Machine Learning; SQL; Data Analysis,2,B.Tech CSE,Delhi
+Isha Verma,isha.verma@example.com,9876543211,Java; Spring Boot; MySQL; REST APIs,3,M.Tech CSE,Mumbai
+Rohit Mehta,rohit.mehta@example.com,9876543212,C++; Embedded Systems; IoT; MATLAB,1,B.Tech ECE,Pune
+Priya Kapoor,priya.kapoor@example.com,9876543213,JavaScript; React; Node.js; MongoDB,2,B.Sc IT,Bangalore
+Karan Singh,karan.singh@example.com,9876543214,Python; Django; PostgreSQL; AWS,4,MCA,Hyderabad
+Sneha Rao,sneha.rao@example.com,9876543215,PHP; Laravel; MySQL; HTML/CSS,3,BCA,Chennai
+Vikas Nair,vikas.nair@example.com,9876543216,Python; Data Science; Pandas; NumPy,2,B.Tech CSE,Kolkata
+Meera Iyer,meera.iyer@example.com,9876543217,Java; Hibernate; Oracle DB; Git,5,M.Tech,Delhi
+Ankit Gupta,ankit.gupta@example.com,9876543218,C; C++; Linux; Networking,2,B.Tech IT,Jaipur
+Ritu Jain,ritu.jain@example.com,9876543219,Python; NLP; TensorFlow; Keras,1,B.Sc Data Science,Noida
+Aditya Malhotra,aditya.malhotra@example.com,9399074503,Python; Scikit-learn; Matplotlib; NumPy,3,B.Sc IT,Delhi
+Simran Kaur,simran.kaur@example.com,9107974623,Python; TensorFlow; Keras; Deep Learning,1,M.Tech,Noida
+Manish Yadav,manish.yadav@example.com,9264241912,Python; Flask; SQL; Pandas,2,B.Sc Data Science,Hyderabad
+Neha Reddy,neha.reddy@example.com,9030179202,C; C++; Data Structures; Algorithms,2,B.Sc IT,Noida
+Sahil Khan,sahil.khan@example.com,9913734938,Python; Scikit-learn; Matplotlib; NumPy,2,B.Tech ECE,Hyderabad
+Pooja Sharma,pooja.sharma@example.com,9486852419,Python; Flask; SQL; Pandas,4,B.Tech CSE,Chennai
+Arjun Nair,arjun.nair@example.com,9623017871,Python; Scikit-learn; Matplotlib; NumPy,6,B.Sc IT,Chennai
+Divya Menon,divya.menon@example.com,9502684527,C; C++; Data Structures; Algorithms,2,B.Tech ECE,Jaipur
+Rahul Bhatia,rahul.bhatia@example.com,9503667589,Java; REST APIs; Microservices; Docker,6,BCA,Mumbai
+Shreya Gupta,shreya.gupta@example.com,9024073563,Java; Spring; Hibernate; MySQL,3,B.Sc Data Science,Delhi
+Amit Chauhan,amit.chauhan@example.com,9787633538,C#; .NET; SQL Server; Azure,2,BCA,Chennai
+Nidhi Desai,nidhi.desai@example.com,9545088889,Python; Flask; SQL; Pandas,3,MCA,Jaipur
+Harsh Vardhan,harsh.vardhan@example.com,9224742732,Java; REST APIs; Microservices; Docker,4,B.Tech ECE,Hyderabad
+Tanya Kapoor,tanya.kapoor@example.com,9401155857,C#; .NET; SQL Server; Azure,3,B.Tech CSE,Delhi
+Rajeev Sinha,rajeev.sinha@example.com,9739098304,Java; Spring; Hibernate; MySQL,6,B.Sc IT,Noida
+Kavya Joshi,kavya.joshi@example.com,9487066488,Python; TensorFlow; Keras; Deep Learning,1,B.Sc IT,Mumbai
+Sandeep Mishra,sandeep.mishra@example.com,9486815630,Python; TensorFlow; Keras; Deep Learning,0,B.Sc Data Science,Hyderabad
+Muskan Agarwal,muskan.agarwal@example.com,9890033571,PHP; Laravel; HTML/CSS; MySQL,4,B.Tech ECE,Delhi
+Deepak Verma,deepak.verma@example.com,9218586172,C#; .NET; SQL Server; Azure,1,B.Sc IT,Chennai
+Ananya Roy,ananya.roy@example.com,9362267536,JavaScript; Angular; Node.js; MongoDB,4,MCA,Pune
+Pranav Iyer,pranav.iyer@example.com,9896084258,Java; Spring; Hibernate; MySQL,0,BCA,Noida
+Ira Malhotra,ira.malhotra@example.com,9768939225,C#; .NET; SQL Server; Azure,4,M.Tech,Jaipur
+Yashwant Reddy,yashwant.reddy@example.com,9553025093,Python; Scikit-learn; Matplotlib; NumPy,0,MCA,Kolkata
+Kritika Sharma,kritika.sharma@example.com,9807867538,Java; REST APIs; Microservices; Docker,2,MCA,Kolkata
+Varun Kapoor,varun.kapoor@example.com,9772122285,Java; REST APIs; Microservices; Docker,3,M.Tech,Bangalore
+Swati Singh,swati.singh@example.com,9593108518,JavaScript; Angular; Node.js; MongoDB,5,B.Sc Data Science,Kolkata
+Naman Jain,naman.jain@example.com,9225864175,JavaScript; React; Redux; Firebase,3,B.Sc Data Science,Noida
+Bhavna Mehra,bhavna.mehra@example.com,9815386525,Java; Spring; Hibernate; MySQL,4,MCA,Chennai
+Akhil Menon,akhil.menon@example.com,9344689831,Python; TensorFlow; Keras; Deep Learning,3,M.Tech,Chennai
+Payal Das,payal.das@example.com,9534067149,JavaScript; Angular; Node.js; MongoDB,1,M.Tech,Chennai
+Raghav Sharma,raghav.sharma@example.com,9306915492,Python; Flask; SQL; Pandas,5,B.Sc IT,Chennai
+Sonia Thomas,sonia.thomas@example.com,9885691065,C#; .NET; SQL Server; Azure,3,BCA,Chennai
+Ajeet Yadav,ajeet.yadav@example.com,9930624091,C; C++; Data Structures; Algorithms,2,BCA,Chennai
+Roshni Iyer,roshni.iyer@example.com,9715330938,JavaScript; React; Redux; Firebase,0,B.Sc IT,Jaipur
+Abhinav Mishra,abhinav.mishra@example.com,9612372982,JavaScript; Angular; Node.js; MongoDB,0,B.Tech ECE,Noida
+Tanvi Chauhan,tanvi.chauhan@example.com,9818267187,C; C++; Data Structures; Algorithms,0,BCA,Chennai
+Kapil Sethi,kapil.sethi@example.com,9380284164,Python; Scikit-learn; Matplotlib; NumPy,0,B.Sc Data Science,Noida
+Rachna Mehta,rachna.mehta@example.com,9923679227,JavaScript; Angular; Node.js; MongoDB,5,BCA,Jaipur
+Parth Gupta,parth.gupta@example.com,9533070677,C; C++; Data Structures; Algorithms,6,BCA,Delhi
+Snehal Patil,snehal.patil@example.com,9112302062,PHP; Laravel; HTML/CSS; MySQL,5,B.Sc Data Science,Delhi
