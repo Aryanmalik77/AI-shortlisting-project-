@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
+import re
 
 st.title("AI Resume Application")
 required_skills = ["c++", "python", "mysql", "java", "flask", "javascript", "c"]
@@ -126,6 +127,7 @@ if uploaded_files:
     plt.title("Resume Match % vs Score with Logistic Regression Prediction")
 
     st.pyplot(figure)
+
 
 
 
