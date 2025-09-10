@@ -116,15 +116,15 @@ if uploaded_files:
 
     X = df[["match%", "Score"]]
     Y = df["shortlisted"]
-    if len(df) > 3:
-        if len(Y.unique()) >3:
+    if len(df) > 1:
+        if len(Y.unique()) >1:
             test_size = 0.2 if len(df) >= 5 else 0.5
             X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = test_size, random_state=42)
-            le = LogisticRegression()
             le = LogisticRegression()
             le.fit(X_train,Y_train)
             y_pred = le.predict(X_test)
             df["prediction"] = le.predict(X)
+            df["prediction] = le.predict(Y)
             st.write("Accuracy:", accuracy_score(Y_test, y_pred))
             colors = df["prediction"].map({0: "red", 1: "green"})
             figure = plt.figure(figsize=(10, 6))
@@ -133,6 +133,7 @@ if uploaded_files:
             st.pyplot(figure)
         else:
             st.warning("⚠ Logistic Regression cannot run because all resumes fall into the same class (all shortlisted or none).")
+
 
 
 
