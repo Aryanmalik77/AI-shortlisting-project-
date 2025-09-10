@@ -123,8 +123,7 @@ if uploaded_files:
             le = LogisticRegression()
             le.fit(X_train,Y_train)
             y_pred = le.predict(X_test)
-            df["prediction"] = le.predict(X)
-            df["prediction] = le.predict(Y)
+            df["prediction"] = le.predict(X_train)
             st.write("Accuracy:", accuracy_score(Y_test, y_pred))
             colors = df["prediction"].map({0: "red", 1: "green"})
             figure = plt.figure(figsize=(10, 6))
@@ -133,6 +132,7 @@ if uploaded_files:
             st.pyplot(figure)
         else:
             st.warning("⚠ Logistic Regression cannot run because all resumes fall into the same class (all shortlisted or none).")
+
 
 
 
