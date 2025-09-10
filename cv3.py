@@ -38,7 +38,7 @@ def extract_experience(text):
             return f"{years} years"
         else:
             return "Above 25 years not allowed"
-        return "FRESHER
+        return "FRESHER"
 def extract_education(text):
     education= (  "b.tech", "bachelor of technology","Btech",
         "b.sc", "bachelor of science",
@@ -126,5 +126,6 @@ if uploaded_files:
     plt.title("Resume Match % vs Score with Logistic Regression Prediction")
 
     st.pyplot(figure)
+
 
 
