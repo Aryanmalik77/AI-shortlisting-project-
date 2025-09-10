@@ -31,12 +31,14 @@ def extract_skills(text):
         if skills in text:
             return skills
 def extract_experience(text):
-    experience = ["1 year", "2 years", "3 years", "4 years", "5 years"]
-    for experience in experience:
-        if experience in text:
-            return experience
+    match = re.search(r'(\d+)\s*year[s]?', text, re.IGNORECASE)
+    if match:
+        years = int(match.group(1))
+        if years <= 25: 
+            return f"{years} years"
         else:
-            return "FRESHER"
+            return "Above 25 years not allowed"
+    return "FRESHER
 def extract_education(text):
     education= (  "b.tech", "bachelor of technology","Btech",
         "b.sc", "bachelor of science",
@@ -45,7 +47,7 @@ def extract_education(text):
         "mba", "bba",
         "phd", "doctorate",
         "10th", "12th", "high school", "senior secondary",
-        "diploma","Mtech")
+        "diploma","Mtech","mca")
     for education in education:
         if education in text:
             return education
@@ -122,4 +124,5 @@ if uploaded_files:
     figure = plt.figure(figsize=(10, 6))
     plt.scatter(df["match%"], df["Score"], c=colors, s=100, edgecolor='k')  # scatter plot for better visualization
     plt.title("Resume Match % vs Score with Logistic Regression Prediction")
+
     st.pyplot(figure)
