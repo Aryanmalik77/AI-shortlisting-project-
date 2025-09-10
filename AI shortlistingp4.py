@@ -113,8 +113,8 @@ if uploaded_files:
 
     df["match%"] = df["Skills"].apply(match_percentage)
     df["shortlisted"] = df["Score"].apply(lambda x: 1 if x >= min_score else 0)
-
-    X = df[["match%":0, "Score":0]]
+    df = df.fillna({"match%": 0, "Score": 0})
+    X = df[["match%", "Score"]]
     Y = df["shortlisted"]
     if len(df) > 1:
         if len(Y.unique()) >1:
@@ -132,6 +132,7 @@ if uploaded_files:
             st.pyplot(figure)
         else:
             st.warning("⚠ Logistic Regression cannot run because all resumes fall into the same class (all shortlisted or none).")
+
 
 
 
