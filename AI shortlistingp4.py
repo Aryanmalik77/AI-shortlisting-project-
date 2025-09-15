@@ -112,31 +112,30 @@ if uploaded_files:
 
 
     df["match%"] = df["Skills"].apply(match_percentage)
-    df["shortlisted"] = df["Score"].apply(lambda x: 1 if x >= min_score else 0)
+     df["shortlisted"] = df["Score"].apply(lambda x: 1 if x >= min_score else 0)
     df = df.fillna({"match%": 0, "Score": 0})
     X = df[["match%", "Score"]]
     Y = df["shortlisted"]
-    if len(df) > 1:
-        if len(Y.unique()) >1:
-            test_size = 0.2 if len(df) >= 5 else 0.5
-            X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = test_size, random_state=42)
-            le = LogisticRegression()
-            le.fit(X_train,Y_train)
-            y_pred = le.predict(X_test)
-            df["prediction"] = le.predict(X)
-            st.write("Accuracy:", accuracy_score(Y_test, y_pred))
-            colors = df["prediction"].map({0: "red", 1: "green"})
-            figure = plt.figure(figsize=(10, 6))
-            plt.scatter(df["match%"], df["Score"], c=colors, s=100, edgecolor='k')  # scatter plot for better visualization
-            plt.title("Resume Match % vs Score with Logistic Regression Prediction")
-            st.pyplot(figure)
-        else:
-            st.warning("⚠ Logistic Regression cannot run because all resumes fall into the same class (all shortlisted or none).")
 
+    if len(df) > 1 and len(Y.unique()) > 1:
+        test_size = 0.2 if len(df) >= 5 else 0.5
+        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_size, random_state=42)
+        le = LogisticRegression()
+        le.fit(X_train, Y_train)
+        y_pred = le.predict(X_test)
+        df["prediction"] = le.predict(X)
 
+        st.write("Accuracy:", accuracy_score(Y_test, y_pred))
 
-
-
+        colors = df["prediction"].map({0: "red", 1: "green"})
+        figure = plt.figure(figsize=(10, 6))
+        plt.scatter(df["match%"], df["Score"], c=colors, s=100, edgecolor='k')
+        plt.title("Resume Match % vs Score with Logistic Regression Prediction")
+        plt.xlabel("Match Percentage")
+        plt.ylabel("Score")
+        st.pyplot(figure)
+    else:
+        st.warning("⚠ Logistic Regression cannot be trained. This is because all resumes either meet the criteria (Score >= min_score) or none do, so the model has only one class to learn from. Please upload a mix of resumes that have different scores.")
 
 
 
