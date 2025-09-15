@@ -118,7 +118,7 @@ if uploaded_files:
     Y = df["shortlisted"]
 
     if len(df) > 1 and len(Y.unique()) > 1:
-        test_size = len(df) >= 5
+        test_size =  0.2 if len(df) >= 5 else 0.5
         X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_size, random_state=42)
         le = LogisticRegression()
         le.fit(X_train, Y_train)
@@ -136,6 +136,7 @@ if uploaded_files:
         st.pyplot(figure)
     else:
         st.warning("⚠ Logistic Regression cannot be trained. This is because all resumes either meet the criteria (Score >= min_score) or none do, so the model has only one class to learn from. Please upload a mix of resumes that have different scores.")
+
 
 
 
