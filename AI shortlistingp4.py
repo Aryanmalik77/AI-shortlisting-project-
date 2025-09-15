@@ -112,7 +112,7 @@ if uploaded_files:
 
 
     df["match%"] = df["Skills"].apply(match_percentage)
-     df["shortlisted"] = df["Score"].apply(lambda x: 1 if x >= min_score else 0)
+    df["shortlisted"] = df["Score"].apply(lambda x: 1 if x >= min_score else 0)
     df = df.fillna({"match%": 0, "Score": 0})
     X = df[["match%", "Score"]]
     Y = df["shortlisted"]
@@ -136,6 +136,7 @@ if uploaded_files:
         st.pyplot(figure)
     else:
         st.warning("⚠ Logistic Regression cannot be trained. This is because all resumes either meet the criteria (Score >= min_score) or none do, so the model has only one class to learn from. Please upload a mix of resumes that have different scores.")
+
 
 
 
